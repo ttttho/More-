@@ -52,7 +52,8 @@
     return cell;
 }
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    
+    VideoPlayViewController *vc=[[VideoPlayViewController alloc]initWithPlayURL:[self.videoVM videoURLForRow:indexPath.row] andDescription:[self.videoVM descForRow:indexPath.row]];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 
@@ -71,7 +72,7 @@
 //每个cell的大小
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     CGFloat width=(self.view.bounds.size.width-24)/2;
-    CGFloat height=width*172/297;//高除以宽
+    CGFloat height=width*200/285;//高除以宽
     return CGSizeMake(width, height);
 }
 @end

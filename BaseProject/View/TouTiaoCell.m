@@ -15,8 +15,8 @@
         [self.contentView addSubview:_iconIV];
         [_iconIV mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.mas_equalTo(0);
-            make.top.mas_equalTo(10);
-            make.size.mas_equalTo(CGSizeMake(150, 150));
+            make.top.mas_equalTo(8);
+            make.size.mas_equalTo(CGSizeMake((kWindowW/2-4),(kWindowW/2-4)));
         }];
     }
     return _iconIV;

@@ -50,4 +50,5 @@
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(nullable NSError *)error{
     [self hideProgress];
 }
+
 @end

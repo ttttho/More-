@@ -66,7 +66,6 @@
 		8511B1AC1BF3680C00754806 /* TouTiaoDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8511B1AB1BF3680C00754806 /* TouTiaoDetailController.m */; };
 		857528191BF3520000D898C3 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 857528181BF3520000D898C3 /* TabBarController.m */; };
 		8575281C1BF3535000D898C3 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8575281B1BF3535000D898C3 /* NavigationController.m */; };
-		85DA76691BF4203B002D9009 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85DA76681BF4203B002D9009 /* LaunchScreen.storyboard */; };
 		85DA766F1BF42791002D9009 /* WeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DA766E1BF42791002D9009 /* WeatherViewController.m */; };
 		85DA76841BF46FF0002D9009 /* VideoCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DA76831BF46FF0002D9009 /* VideoCollectionViewController.m */; };
 		85DA76871BF47059002D9009 /* VideoNetManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DA76861BF47059002D9009 /* VideoNetManger.m */; };
@@ -182,7 +181,6 @@
 		857528181BF3520000D898C3 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
 		8575281A1BF3535000D898C3 /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
 		8575281B1BF3535000D898C3 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
-		85DA76681BF4203B002D9009 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85DA766D1BF42791002D9009 /* WeatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherViewController.h; sourceTree = "<group>"; };
 		85DA766E1BF42791002D9009 /* WeatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherViewController.m; sourceTree = "<group>"; };
 		85DA76821BF46FF0002D9009 /* VideoCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoCollectionViewController.h; sourceTree = "<group>"; };
@@ -483,7 +481,6 @@
 				3886C0A21BD748830014E661 /* Assets.xcassets */,
 				3886C09F1BD748830014E661 /* Main.storyboard */,
 				3886C0B81BD74A700014E661 /* PrefixHeader.pch */,
-				85DA76681BF4203B002D9009 /* LaunchScreen.storyboard */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -660,7 +657,6 @@
 				3885C8E31BE8E8FB009441EA /* iOS-social-analytics-releasenote.html in Resources */,
 				3885C8D71BE8E8FB009441EA /* UMSCommentInputControlleriPad.xib in Resources */,
 				3885C8D91BE8E8FB009441EA /* UMShareEditViewControlleriPad.xib in Resources */,
-				85DA76691BF4203B002D9009 /* LaunchScreen.storyboard in Resources */,
 				3885C8EE1BE8E8FB009441EA /* markdown.css in Resources */,
 				3885C8E61BE8E8FB009441EA /* ios-social-sdk-comment-quick.html in Resources */,
 				3885C8D31BE8E8FB009441EA /* UMSocialLocalizable.strings in Resources */,
@@ -871,13 +867,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BaseProject/Vendor/umeng_ios_social_sdk_4.2-2.5_arm64_custom/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 				);
 				GCC_PREFIX_HEADER = BaseProject/Resource/PrefixHeader.pch;
 				INFOPLIST_FILE = BaseProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -886,7 +883,7 @@
 					"$(PROJECT_DIR)/BaseProject/Vendor/umeng_ios_social_sdk_4.2-2.5_arm64_custom/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 					"$(PROJECT_DIR)/BaseProject/Vendor/umeng_ios_social_sdk_4.2-2.5_arm64_custom/UMSocial_Sdk_Extra_Frameworks/Wechat",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lzy.More00;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lzy.More03-0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -897,13 +894,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BaseProject/Vendor/umeng_ios_social_sdk_4.2-2.5_arm64_custom/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 				);
 				GCC_PREFIX_HEADER = BaseProject/Resource/PrefixHeader.pch;
 				INFOPLIST_FILE = BaseProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -912,7 +910,7 @@
 					"$(PROJECT_DIR)/BaseProject/Vendor/umeng_ios_social_sdk_4.2-2.5_arm64_custom/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 					"$(PROJECT_DIR)/BaseProject/Vendor/umeng_ios_social_sdk_4.2-2.5_arm64_custom/UMSocial_Sdk_Extra_Frameworks/Wechat",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lzy.More00;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lzy.More03-0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

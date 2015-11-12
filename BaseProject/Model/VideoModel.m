@@ -21,7 +21,9 @@
 
 
 @implementation VideoVideolist
-
++(NSDictionary *)replacedKeyFromPropertyName{
+    return @{@"Description":@"description"};
+}
 @end
 
 

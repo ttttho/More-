@@ -30,7 +30,7 @@
 
 @interface VideoVideolist : NSObject
 
-@property (nonatomic, copy) NSString *description;
+@property (nonatomic, copy) NSString *Description;
 
 @property (nonatomic, copy) NSString *replyid;
 

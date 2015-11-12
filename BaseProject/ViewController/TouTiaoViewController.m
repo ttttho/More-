@@ -17,9 +17,9 @@
 {
     self = [super init];
     if (self) {
-        self.itemSize = CGSizeMake((kWindowW/2-2), (kWindowW/2-2));
-        self.minimumLineSpacing = 1;
-        self.minimumInteritemSpacing = 1;
+        self.itemSize = CGSizeMake((kWindowW/2-2), (kWindowW/2*200/150));
+        self.minimumLineSpacing = 2;
+        self.minimumInteritemSpacing = 2;
         self.sectionInset = UIEdgeInsetsMake(1, 1, 1, 1);
 //        //设置视图的滚动方式为水平滚动
 //        self.scrollDirection = UICollectionViewScrollDirectionHorizontal;
@@ -30,7 +30,7 @@
 
 
 
-@interface TouTiaoViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
+@interface TouTiaoViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 @property(nonatomic,strong)ToutiaoViewModel *toutiaoVM;
 @property(nonatomic,strong)UICollectionView *collection;
 @property(nonatomic,strong)NSURL *toutiaoURL;
@@ -50,7 +50,7 @@
         _collection=[[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:layout];
         _collection.delegate=self;
         _collection.dataSource=self;
-        _collection.backgroundColor=[UIColor lightGrayColor];
+        _collection.backgroundColor=[UIColor greenSeaColor];
         [self.view addSubview:_collection];
         [_collection mas_makeConstraints:^(MASConstraintMaker *make) {
             make.edges.mas_equalTo(0);
@@ -94,9 +94,22 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 110;
-}
-
-
+////四周边距
+//-(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
+//    return UIEdgeInsetsMake(8,8,8,8);
+//}
+////行边距
+//-(CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section{
+//    return 5;
+//}
+////列边距
+//-(CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section{
+//    return 5;
+//}
+////每个cell的大小
+//-(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
+//    CGFloat width=(self.view.bounds.size.width-24)/2;
+//    CGFloat height=width*172/297;//高除以宽
+//    return CGSizeMake(width, height);
+//}
 @end

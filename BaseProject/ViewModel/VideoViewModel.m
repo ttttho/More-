@@ -19,7 +19,7 @@
     return [self videoListModelForRow:row].title;
 }
 -(NSString *)descForRow:(NSInteger)row{
-    return [self videoListModelForRow:row].description;
+    return [self videoListModelForRow:row].Description;
 }
 -(NSURL *)iconURLForRow:(NSInteger)row{
     return [NSURL URLWithString:[self videoListModelForRow:row].cover];
