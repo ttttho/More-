@@ -54,7 +54,7 @@
 
 @property (nonatomic, assign) BOOL hasIcon;
 
-@property (nonatomic, strong) NSArray<TAds *> *ads;
+@property (nonatomic, strong) NSArray *ads;
 
 @property (nonatomic, copy) NSString *ename;
 

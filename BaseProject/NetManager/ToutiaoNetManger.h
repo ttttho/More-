@@ -10,4 +10,5 @@
 #import "ToutiaoModel.h"
 @interface ToutiaoNetManger : BaseNetManager
 +getTouTiaoWithIndex:(NSInteger)index completationHandle:(void(^)(id model,NSError *error))completionHandle;
+
 @end

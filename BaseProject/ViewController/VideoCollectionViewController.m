@@ -72,7 +72,7 @@
 //每个cell的大小
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     CGFloat width=(self.view.bounds.size.width-24)/2;
-    CGFloat height=width*200/285;//高除以宽
+    CGFloat height=width*200/270;//高除以宽
     return CGSizeMake(width, height);
 }
 @end

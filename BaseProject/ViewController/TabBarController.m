@@ -16,8 +16,6 @@
 +(void)initialize{
     if (self==[TabBarController class]) {
         UITabBar *tabBar=[UITabBar appearance];
-        //设置背景图
-//        [tabBar setBackgroundImage:[UIImage imageNamed:@"shower1_35"]];
         //获取UItabbaritem
         UITabBarItem *item=[UITabBarItem appearance];
         //文字位置

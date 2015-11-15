@@ -10,6 +10,7 @@
 
 @interface WeatherViewController ()<UIWebViewDelegate>
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
+@property (weak, nonatomic) IBOutlet UIWebView *weatherWeb;
 @end
 
 @implementation WeatherViewController
@@ -21,6 +22,7 @@
     [self.webView loadData:gif MIMEType:@"image/gif" textEncodingName:nil baseURL:nil];
     self.webView.userInteractionEnabled = NO;
     [self.view addSubview:self.webView];
+    [self.weatherWeb loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://m.weather.com.cn/mweather/101010100.shtml"]]];
 }
 
 #pragma mark-delegate

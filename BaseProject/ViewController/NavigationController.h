@@ -1,9 +1,9 @@
 //
-//  NavigationController.h
-//  BaseProject
+//  TRNavigationController.h
+//  MyWechat
 //
-//  Created by tarena on 15/11/11.
-//  Copyright © 2015年 Tarena. All rights reserved.
+//  Created by tarena on 15/9/18.
+//  Copyright (c) 2015年 tarena. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

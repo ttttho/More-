@@ -45,8 +45,7 @@
         _descLabel.text=self.desc;
         [self.view addSubview:_descLabel];
         _descLabel.font=[UIFont boldFlatFontOfSize:20];
-        _descLabel.textColor=[UIColor grayColor];
-        _descLabel.textAlignment=NSTextAlignmentCenter;
+        _descLabel.textAlignment=NSTextAlignmentLeft;
         _descLabel.numberOfLines=0;
         [_descLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.mas_equalTo(20);
@@ -58,13 +57,14 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor=[UIColor greenSeaColor];
+    self.view.backgroundColor=[UIColor whiteColor];
     [self.view addSubview:self.playButton];
     [self.view addSubview:self.descLabel];
     self.title=@"视频播放";
     self.player=[AVPlayer playerWithURL:self.url];
     self.layer=[AVPlayerLayer playerLayerWithPlayer:self.player];
     [self.playButton bk_addEventHandler:^(id sender) {
+        [self.playButton setBackgroundImage:[UIImage imageNamed:@"bg"] forState:0];
         [self.layer removeFromSuperlayer];
         self.layer.frame=self.playButton.frame;
         [self.view.layer addSublayer:self.layer];

@@ -64,8 +64,14 @@
 		3886C0BE1BD74AFE0014E661 /* BaseNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3886C0BD1BD74AFE0014E661 /* BaseNetManager.m */; };
 		3886C0C11BD74B090014E661 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3886C0C01BD74B090014E661 /* BaseModel.m */; };
 		8511B1AC1BF3680C00754806 /* TouTiaoDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8511B1AB1BF3680C00754806 /* TouTiaoDetailController.m */; };
+		855A44281BF5BF6900E37676 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 855A44271BF5BF6900E37676 /* Launch Screen.storyboard */; };
+		855A442A1BF5C1FA00E37676 /* a.gif in Resources */ = {isa = PBXBuildFile; fileRef = 855A44291BF5C1FA00E37676 /* a.gif */; };
+		855A442D1BF5C7D000E37676 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 855A442C1BF5C7D000E37676 /* NavigationController.m */; };
+		855A44301BF5CE8000E37676 /* ZiXunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 855A442F1BF5CE8000E37676 /* ZiXunViewController.m */; };
+		855A44331BF5D23C00E37676 /* HappyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 855A44321BF5D23C00E37676 /* HappyCell.m */; };
+		855A44361BF5D26A00E37676 /* HappyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 855A44351BF5D26A00E37676 /* HappyTableViewController.m */; };
+		855A44391BF5FC2000E37676 /* TouTiaoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 855A44381BF5FC2000E37676 /* TouTiaoTableViewController.m */; };
 		857528191BF3520000D898C3 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 857528181BF3520000D898C3 /* TabBarController.m */; };
-		8575281C1BF3535000D898C3 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8575281B1BF3535000D898C3 /* NavigationController.m */; };
 		85DA766F1BF42791002D9009 /* WeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DA766E1BF42791002D9009 /* WeatherViewController.m */; };
 		85DA76841BF46FF0002D9009 /* VideoCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DA76831BF46FF0002D9009 /* VideoCollectionViewController.m */; };
 		85DA76871BF47059002D9009 /* VideoNetManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DA76861BF47059002D9009 /* VideoNetManger.m */; };
@@ -78,9 +84,7 @@
 		85E8094D1BF2080B008FE7D1 /* ToutiaoNetManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E8094C1BF2080B008FE7D1 /* ToutiaoNetManger.m */; };
 		85E809501BF20AF9008FE7D1 /* ToutiaoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E8094F1BF20AF9008FE7D1 /* ToutiaoViewModel.m */; };
 		85E809531BF20F58008FE7D1 /* TouTiaoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E809521BF20F58008FE7D1 /* TouTiaoCell.m */; };
-		85E809561BF20F81008FE7D1 /* TouTiaoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E809551BF20F81008FE7D1 /* TouTiaoViewController.m */; };
 		85E809591BF20FF3008FE7D1 /* MyImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E809581BF20FF3008FE7D1 /* MyImageView.m */; };
-		CC54569B1BF3948400E87E18 /* a.gif in Resources */ = {isa = PBXBuildFile; fileRef = CC54569A1BF3948400E87E18 /* a.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -177,10 +181,20 @@
 		5EAAD623A23724C816F8DC02 /* libPods-BaseProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaseProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8511B1AA1BF3680C00754806 /* TouTiaoDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouTiaoDetailController.h; sourceTree = "<group>"; };
 		8511B1AB1BF3680C00754806 /* TouTiaoDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouTiaoDetailController.m; sourceTree = "<group>"; };
+		855A44271BF5BF6900E37676 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		855A44291BF5C1FA00E37676 /* a.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = a.gif; sourceTree = "<group>"; };
+		855A442B1BF5C7D000E37676 /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
+		855A442C1BF5C7D000E37676 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
+		855A442E1BF5CE8000E37676 /* ZiXunViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZiXunViewController.h; sourceTree = "<group>"; };
+		855A442F1BF5CE8000E37676 /* ZiXunViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZiXunViewController.m; sourceTree = "<group>"; };
+		855A44311BF5D23C00E37676 /* HappyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HappyCell.h; sourceTree = "<group>"; };
+		855A44321BF5D23C00E37676 /* HappyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HappyCell.m; sourceTree = "<group>"; };
+		855A44341BF5D26A00E37676 /* HappyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HappyTableViewController.h; sourceTree = "<group>"; };
+		855A44351BF5D26A00E37676 /* HappyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HappyTableViewController.m; sourceTree = "<group>"; };
+		855A44371BF5FC2000E37676 /* TouTiaoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouTiaoTableViewController.h; sourceTree = "<group>"; };
+		855A44381BF5FC2000E37676 /* TouTiaoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouTiaoTableViewController.m; sourceTree = "<group>"; };
 		857528171BF3520000D898C3 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
 		857528181BF3520000D898C3 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
-		8575281A1BF3535000D898C3 /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
-		8575281B1BF3535000D898C3 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
 		85DA766D1BF42791002D9009 /* WeatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherViewController.h; sourceTree = "<group>"; };
 		85DA766E1BF42791002D9009 /* WeatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherViewController.m; sourceTree = "<group>"; };
 		85DA76821BF46FF0002D9009 /* VideoCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoCollectionViewController.h; sourceTree = "<group>"; };
@@ -203,11 +217,8 @@
 		85E8094F1BF20AF9008FE7D1 /* ToutiaoViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToutiaoViewModel.m; sourceTree = "<group>"; };
 		85E809511BF20F58008FE7D1 /* TouTiaoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouTiaoCell.h; sourceTree = "<group>"; };
 		85E809521BF20F58008FE7D1 /* TouTiaoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouTiaoCell.m; sourceTree = "<group>"; };
-		85E809541BF20F81008FE7D1 /* TouTiaoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouTiaoViewController.h; sourceTree = "<group>"; };
-		85E809551BF20F81008FE7D1 /* TouTiaoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouTiaoViewController.m; sourceTree = "<group>"; };
 		85E809571BF20FF3008FE7D1 /* MyImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyImageView.h; sourceTree = "<group>"; };
 		85E809581BF20FF3008FE7D1 /* MyImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyImageView.m; sourceTree = "<group>"; };
-		CC54569A1BF3948400E87E18 /* a.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = a.gif; sourceTree = "<group>"; };
 		DD4F0750B5DAAA87BA236B31 /* Pods-BaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProject/Pods-BaseProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -477,10 +488,11 @@
 		3886C0B21BD74A4A0014E661 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				CC54569A1BF3948400E87E18 /* a.gif */,
+				855A44291BF5C1FA00E37676 /* a.gif */,
 				3886C0A21BD748830014E661 /* Assets.xcassets */,
 				3886C09F1BD748830014E661 /* Main.storyboard */,
 				3886C0B81BD74A700014E661 /* PrefixHeader.pch */,
+				855A44271BF5BF6900E37676 /* Launch Screen.storyboard */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -511,6 +523,8 @@
 				85E809581BF20FF3008FE7D1 /* MyImageView.m */,
 				85E809511BF20F58008FE7D1 /* TouTiaoCell.h */,
 				85E809521BF20F58008FE7D1 /* TouTiaoCell.m */,
+				855A44311BF5D23C00E37676 /* HappyCell.h */,
+				855A44321BF5D23C00E37676 /* HappyCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -518,12 +532,14 @@
 		3886C0B61BD74A4A0014E661 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				855A442B1BF5C7D000E37676 /* NavigationController.h */,
+				855A442C1BF5C7D000E37676 /* NavigationController.m */,
 				857528171BF3520000D898C3 /* TabBarController.h */,
 				857528181BF3520000D898C3 /* TabBarController.m */,
-				8575281A1BF3535000D898C3 /* NavigationController.h */,
-				8575281B1BF3535000D898C3 /* NavigationController.m */,
-				85E809541BF20F81008FE7D1 /* TouTiaoViewController.h */,
-				85E809551BF20F81008FE7D1 /* TouTiaoViewController.m */,
+				855A442E1BF5CE8000E37676 /* ZiXunViewController.h */,
+				855A442F1BF5CE8000E37676 /* ZiXunViewController.m */,
+				855A44371BF5FC2000E37676 /* TouTiaoTableViewController.h */,
+				855A44381BF5FC2000E37676 /* TouTiaoTableViewController.m */,
 				8511B1AA1BF3680C00754806 /* TouTiaoDetailController.h */,
 				8511B1AB1BF3680C00754806 /* TouTiaoDetailController.m */,
 				85DA766D1BF42791002D9009 /* WeatherViewController.h */,
@@ -532,6 +548,8 @@
 				85DA76831BF46FF0002D9009 /* VideoCollectionViewController.m */,
 				85DA76911BF47D19002D9009 /* VideoPlayViewController.h */,
 				85DA76921BF47D19002D9009 /* VideoPlayViewController.m */,
+				855A44341BF5D26A00E37676 /* HappyTableViewController.h */,
+				855A44351BF5D26A00E37676 /* HappyTableViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -651,7 +669,7 @@
 				3885C8E01BE8E8FB009441EA /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				3885C8F81BE8E96A009441EA /* LICENSE in Resources */,
 				3885C8EA1BE8E8FB009441EA /* ios-social-sdk-shake.html in Resources */,
-				CC54569B1BF3948400E87E18 /* a.gif in Resources */,
+				855A442A1BF5C1FA00E37676 /* a.gif in Resources */,
 				3885C8E41BE8E8FB009441EA /* iOS-social-releasenote.html in Resources */,
 				3885C8DA1BE8E8FB009441EA /* UMSLoginViewController.xib in Resources */,
 				3885C8E31BE8E8FB009441EA /* iOS-social-analytics-releasenote.html in Resources */,
@@ -664,6 +682,7 @@
 				3885C8DB1BE8E8FB009441EA /* UMSnsAccountViewController.xib in Resources */,
 				3885C8DC1BE8E8FB009441EA /* UMSShareListController.xib in Resources */,
 				3885C8DD1BE8E8FB009441EA /* UMSocialSDKResourcesNew.bundle in Resources */,
+				855A44281BF5BF6900E37676 /* Launch Screen.storyboard in Resources */,
 				3885C8ED1BE8E8FB009441EA /* ios-social-sdk-socialbar.html in Resources */,
 				3885C8E81BE8E8FB009441EA /* ios-social-sdk-login-detail.html in Resources */,
 				3885C8E71BE8E8FB009441EA /* ios-social-sdk-like.html in Resources */,
@@ -728,18 +747,18 @@
 				85E8094A1BF2042B008FE7D1 /* ToutiaoModel.m in Sources */,
 				85DA766F1BF42791002D9009 /* WeatherViewController.m in Sources */,
 				3886C0BE1BD74AFE0014E661 /* BaseNetManager.m in Sources */,
+				855A44391BF5FC2000E37676 /* TouTiaoTableViewController.m in Sources */,
 				85E809501BF20AF9008FE7D1 /* ToutiaoViewModel.m in Sources */,
 				85DA76931BF47D19002D9009 /* VideoPlayViewController.m in Sources */,
 				85DA76871BF47059002D9009 /* VideoNetManger.m in Sources */,
 				85DA76841BF46FF0002D9009 /* VideoCollectionViewController.m in Sources */,
 				3804CE541BD758F10046C8C8 /* NSString+QRCode.m in Sources */,
 				85E8094D1BF2080B008FE7D1 /* ToutiaoNetManger.m in Sources */,
+				855A44301BF5CE8000E37676 /* ZiXunViewController.m in Sources */,
 				3885C8FA1BE8E96A009441EA /* PSCollectionViewCell.m in Sources */,
-				8575281C1BF3535000D898C3 /* NavigationController.m in Sources */,
 				85DA768D1BF47330002D9009 /* VideoViewModel.m in Sources */,
 				85E809591BF20FF3008FE7D1 /* MyImageView.m in Sources */,
 				8511B1AC1BF3680C00754806 /* TouTiaoDetailController.m in Sources */,
-				85E809561BF20F81008FE7D1 /* TouTiaoViewController.m in Sources */,
 				85DA768A1BF47066002D9009 /* VideoModel.m in Sources */,
 				3804CE531BD758F10046C8C8 /* NSString+PJR.m in Sources */,
 				3885C8F91BE8E96A009441EA /* PSCollectionView.m in Sources */,
@@ -747,9 +766,12 @@
 				3885C8981BE8E88D009441EA /* iCarousel.m in Sources */,
 				3804CE511BD758F10046C8C8 /* AppDelegate+Category.m in Sources */,
 				3886C0BB1BD74AE90014E661 /* BaseViewModel.m in Sources */,
+				855A442D1BF5C7D000E37676 /* NavigationController.m in Sources */,
 				3885C8FB1BE8E96A009441EA /* README.md in Sources */,
+				855A44331BF5D23C00E37676 /* HappyCell.m in Sources */,
 				3886C0C11BD74B090014E661 /* BaseModel.m in Sources */,
 				3886C0981BD748830014E661 /* main.m in Sources */,
+				855A44361BF5D26A00E37676 /* HappyTableViewController.m in Sources */,
 				857528191BF3520000D898C3 /* TabBarController.m in Sources */,
 				3804CE521BD758F10046C8C8 /* NSObject+Common.m in Sources */,
 				85E809531BF20F58008FE7D1 /* TouTiaoCell.m in Sources */,

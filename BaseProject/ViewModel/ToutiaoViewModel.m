@@ -43,4 +43,49 @@
 -(NSURL *)toutiaoDetailForRow:(NSInteger)row{
     return [NSURL URLWithString:[self modelForRow:row].url_3w];
 }
+-(NSURL *)photoSetIdForRow:(NSInteger)row{
+    NSString *str=[self modelForRow:row].photosetID;
+    NSString *str1=[str substringFromIndex:9];
+    NSString *str2=[str substringWithRange:NSMakeRange(4, 4)];
+    return[NSURL URLWithString:[NSString stringWithFormat:@"http://3g.163.com/touch/photoview.html?from=index.focusimg&setid=%@&channelid=%@",str1,str2]];
+}
+-(NSArray *)imgextra:(NSInteger)row{
+    NSArray *arr=[self modelForRow:row].imgextra;
+    NSMutableArray *array=[NSMutableArray new];
+    for (int i=0; i<arr.count; i++) {
+        TImgextra *model=arr[i];
+        [array addObject:[NSURL URLWithString:model.imgsrc]];
+    }
+    return [array copy];
+}
+
+
+
+
+-(NSArray *)ads{
+    if (!_ads) {
+        _ads=[self modelForRow:0].ads;
+    }
+    return _ads;
+}
+-(TAds *)ModelForRow:(NSInteger)index{
+    return self.ads[index];
+}
+-(NSString *)adsTitleForIndex:(NSInteger)index{
+    return [self ModelForRow:index].title;
+}
+-(NSString *)adsTagForIndex:(NSInteger)index{
+    return [self ModelForRow:index].tag;
+}
+-(NSURL *)adsURLlForIndex:(NSInteger)index{
+    NSString *str=[self ModelForRow:index].url;
+    NSString *str1=[str substringFromIndex:9];
+    NSString *str2=[str substringWithRange:NSMakeRange(4, 4)];
+    return[NSURL URLWithString:[NSString stringWithFormat:@"http://3g.163.com/touch/photoview.html?from=index.focusimg&setid=%@&channelid=%@",str1,str2]];
+}
+-(NSURL *)adsImgForIndex:(NSInteger)index{
+    return [NSURL URLWithString:[self ModelForRow:index].imgsrc];
+}
+
+
 @end
